@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+body {
+    background-color: #eee;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    display: flex;
+    width: 40%;
+    background-color: #000;
+}
+
+.sidebar-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding: 1rem;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+h2 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #AE8A9F;
+}
+
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-profile {
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid #000068;
+}
+
+.job-description {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding-top: 0.5rem;
+    color: #AE8A9F;
+}
+
+.sidebar-container p {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: #AE8A9F;
+    padding-top: 0.2rem;
+}
+
+.line {
+    display: flex;
+    margin: 1rem auto;
+    width: 100%;
+    color: #343434;
+    border-color: #000068;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 0.4rem;
+}
+
+ul li {
+    display: flex;
+    justify-content: left;
+    padding-top: 0.8rem;
+    margin: auto;
+}
+
+ul li span {
+    padding-right: 0.9rem;
+}
+
+.contact-text {
+    font-size: 0.8rem;
+    font-weight: 250;
+    color: #fff;
+}
+
+.icon {
+    color: #000068;
+}
+
+.formation ul li {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.course, .college, .completion-year {
+    font-size: 0.8rem;
+    font-weight: 250;
+    color: #fff;
+}
+
+.content-container {
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.content-container p {
+    text-align: justify;
+    margin: 1.2rem;
+}
+
+.title-content {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    margin: 1.2rem;
+}
+
+.skills-container {
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hard-skill-title, .soft-skill-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1.2rem;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.hard-skill {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-left: 0.9rem;
+}
+
+.img-container {
+    width: 40px;
+}
+
+.skill-img {
+    width: 100%;
+}
+
+.skill-bar {
+    display: flex;
+    align-items: center;
+    height: 4vh;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    padding-left: 0.4rem;
+}
+
+.html5 {
+    width: 80%;
+    border: 2px solid #F16529;
+    background-color: #F16529;
+}
+
+.css {
+    width: 80%;
+    border: 2px solid #33AADD;
+    background-color: #33AADD;
+}
+
+.js {
+    width: 40%;
+    border: 2px solid #FFCA28;
+    background-color: #FFCA28;
+}
+
+.python {
+    width: 30%;
+    border: 2px solid #3773A5;
+    background-color: #3773A5;
+}
+
+.angular {
+    width: 5%;
+    border: 2px solid #DD0031;
+    background-color: #DD0031;
+}
+
+.soft-skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+ 
+}
+
+
+.soft-skill-list {
+    width: 40%;
+    padding: 1rem;
+}
+
+.soft-skill-text {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #AE8A9F;
+    text-transform: uppercase;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #AE8A9F;
+  padding: 1rem;
+}
+
+.communication {
+    border: 8px solid #FFCA28;
+}
+
+.teamwork {
+    border: 8px solid #F16529;
+}
+
+.adaptability {
+    border: 8px solid #3773A5;
+}
+
+.problem-solving {
+    border: 8px solid #DD0031;
+}
+
+@media screen and (max-width: 491px) {
+    
+    html {
+        font-size: 14px;
+    }
+
+    aside {
+        width: 45%;
+        margin-bottom: 1rem;
+    }
+
+    .photo-profile {
+        width: 100px;
+        height: 100px;
+        border: 6px solid #000068;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    .job-description {
+        font-size: 0.8rem;
+    }
+
+    .sidebar-container p {
+        font-size: 0.7rem;
+        margin: auto;
+    }
+
+    .contact h2 {
+        font-size: 0.8rem;
+    }
+
+    .contact-text {
+        font-size: 0.7rem;
+    }
+
+    .formation h2 {
+        font-size: 0.8rem;
+    }
+
+    .title-content {
+        font-size: 0.8rem;
+    }
+
+    .content-container p {
+        font-size: 0.7rem;
+    }
+
+    .completion-year, .course, .college {
+        font-size: 0.7rem;
+    }
+
+    .hard-skill-title, .soft-skill-title {
+        font-size: 0.9rem;
+    }
+
+    .skill-img {
+        width: 70%;
+    }
+
+    .skill-bar {
+        height: 3vh;
+        font-size: 0.7rem;
+        border-radius: 6px;
+    }
+
+    .angular {
+        width: 13%;
+    }
+
+    .circle {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 0.7rem;
+        padding: 0,8rem;
+    }
+
+    .communication {
+        border: 4px solid #FFCA28;
+    }
+
+    .teamwork {
+        border: 4px solid #F16529;
+    }
+
+    .adaptability {
+        border: 4px solid #3773A5;
+    }
+
+    .problem-solving {
+        border: 4px solid #DD0031;
+    }
+
+    .soft-skill-title {
+        text-align: left;
+    }
+
+    .soft-skill-list {
+        width: 65%;
+        padding: 0.8rem;
+    }
+
+    .soft-skill-text {
+        font-size: 0.8rem;
+    }
+
+    ul li {
+        font-size: 0.6rem;
+    }
+
+}
+
+
+
+
+
