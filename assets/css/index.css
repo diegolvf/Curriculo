@@ -387,6 +387,115 @@ ul li span {
 
 }
 
+@media screen and (max-width: 394px) {
+    
+    html {
+        font-size: 12px;
+    }
+
+    aside {
+        width: 40%;
+        margin-bottom: 1rem;
+    }
+
+    .photo-profile {
+        width: 100px;
+        height: 100px;
+        border: 6px solid #000068;
+    }
+
+    h1 {
+        font-size: 0.9rem;
+    }
+
+    .job-description {
+        font-size: 0.7rem;
+    }
+
+    .sidebar-container p {
+        font-size: 0.6rem;
+        margin: auto;
+    }
+
+    .contact h2 {
+        font-size: 0.7rem;
+    }
+
+    .contact-text {
+        font-size: 0.6rem;
+    }
+
+    .formation h2 {
+        font-size: 0.7rem;
+    }
+
+    .title-content {
+        font-size: 0.8rem;
+    }
+
+    .content-container p {
+        font-size: 0.6rem;
+    }
+
+    .completion-year, .course, .college {
+        font-size: 0.6rem;
+    }
+
+    .hard-skill-title, .soft-skill-title {
+        font-size: 0.8rem;
+    }
+
+    .skill-img {
+        width: 50%;
+    }
+
+    .skill-bar {
+        height: 2vh;
+        font-size: 0.6rem;
+        border-radius: 6px;
+    }
+
+    .angular {
+        width: 13%;
+    }
+
+    .circle {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 0.6rem;
+        padding: 0.7rem;
+    }
+
+    .communication {
+        border: 3px solid #FFCA28;
+    }
+
+    .teamwork {
+        border: 3px solid #F16529;
+    }
+
+    .adaptability {
+        border: 3px solid #3773A5;
+    }
+
+    .problem-solving {
+        border: 3px solid #DD0031;
+    }
+
+    .soft-skill-list {
+        width: 60%;
+        padding: 0.8rem;
+    }
+
+    .soft-skill-text {
+        font-size: 0.8rem;
+    }
+
+    ul li {
+        font-size: 0.6rem;
+    }
+
+}
 
 
 
