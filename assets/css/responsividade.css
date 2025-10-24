@@ -1,0 +1,234 @@
+
+/* AJUSTES GERAIS PARA TELAS MENORES QUE 1024px (Laptops menores / Tablets em paisagem) */
+/* Ajusta a fonte base para melhorar a leitura */
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 15px; /* Reduz um pouco o tamanho base da fonte */
+    }
+
+    /* Reduz a margem do aside e do about-me */
+    .container-aside {
+        padding: 0.8rem;
+    }
+
+    .about-me {
+        padding: 0.8rem;
+    }
+
+    /* Reduz o tamanho do ícone de hard skill */
+    .hard-skill-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Ajusta o contêiner de soft skills para ser menos apertado horizontalmente */
+    .soft-skill {
+        flex-direction: column; /* Empilha o círculo e o texto verticalmente */
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .soft-skill-text-container {
+        width: 100%; /* Ocupa a largura total para o texto */
+        margin-top: 1rem;
+    }
+
+    /* Ajuste para o carrossel de certificações */
+    .carousel-container {
+        width: 90%;
+        height: 70vh;
+    }
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* AJUSTES PARA TABLETS (Até 768px - iPad, etc. em modo retrato) */
+@media screen and (max-width: 768px) {
+    /* Altera o layout principal de duas colunas para uma única coluna */
+    main {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    /* A barra lateral (aside) passa a ocupar 100% da largura no topo */
+    aside {
+        width: 100%;
+        margin-bottom: 1rem; /* Adiciona um espaço abaixo da seção lateral */
+    }
+
+    /* A seção principal também ocupa 100% da largura */
+    .about-me {
+        width: 100%;
+        padding: 0.5rem;
+        background-color: #fff; /* Altera o fundo para manter a unidade visual */
+    }
+    
+    .container-about-me {
+        padding: 0.5rem;
+    }
+
+    /* Centraliza os elementos da seção lateral para um visual mais limpo em coluna */
+    .container-aside {
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Alinha o texto das informações de contato à esquerda dentro da seção */
+    .info-contact,
+    .formation {
+        width: 100%;
+        text-align: left; /* Mantém títulos alinhados à esquerda para listas */
+    }
+
+    /* Garante que os links de contato sejam exibidos em linha em 100% */
+    .container-contact ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .container-contact li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+    
+    .contact-title,
+    .formation-title {
+        text-align: center;
+    }
+
+    /* Centraliza a imagem do perfil para melhor visual */
+    .img-profile {
+        margin: 1rem auto;
+    }
+
+    /* Ajustes para Hard-Skills */
+    .hard-skills-container {
+        width: 100%; /* Ocupa mais espaço horizontal */
+    }
+    
+    /* Ajustes para Soft-Skills */
+    .soft-skills {
+        margin-top: 2rem;
+    }
+
+    .soft-skill {
+        flex-direction: row; /* Volta a ser lado a lado, mas mais compacto */
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .soft-skill-text-container {
+        width: 65%; /* Limita o texto para não ficar muito largo */
+        text-align: left;
+    }
+    
+    .circle {
+        width: 60px; /* Reduz o tamanho do círculo */
+        height: 60px;
+    }
+
+    .number {
+        font-size: 1.2em;
+    }
+
+    .communication-title {
+        text-align: left;
+    }
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* AJUSTES PARA CELULARES (Até 491px - Mantendo seus ajustes e adicionando o que falta) */
+@media screen and (max-width: 491px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    /* A linha divisória passa a ser mais discreta */
+    .line {
+        border-width: 1px;
+    }
+
+    /* Ajusta os títulos principais para um tamanho adequado */
+    .objective-title,
+    .experience-title,
+    .soft-skills-title,
+    .certifications-title {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    /* Ajusta a lista de formação para ocupar mais espaço */
+    .formation-list {
+        padding: 0 0.5rem;
+    }
+
+    /* Os itens da lista de formação não precisam de quebra de linha tão grande */
+    .formation-list .list-itens {
+        margin-bottom: 0.5rem;
+    }
+
+    /* Ajuste de tamanho para o ícone e texto de contato */
+    .contact-icon .icon {
+        font-size: 1em;
+    }
+    .contact-text {
+        font-size: 0.9em;
+    }
+
+    /* Ajustes para Hard-Skills: Deixa a barra mais alta e ícones menores */
+    .hard-skill-icon {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .hard-skill-name, .hard-skill-percent {
+        font-size: 0.8rem;
+    }
+    
+    .progress-bar {
+        height: 8px;
+    }
+
+    /* Ajustes para Soft-Skills em tela pequena */
+    .soft-skill {
+        justify-content: center;
+        flex-direction: column; /* Empilha para economizar espaço horizontal */
+        margin-bottom: 1.5rem;
+    }
+
+    .soft-skill-text-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .communication-title {
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .circle {
+        width: 120px; /* Mantém um tamanho razoável */
+        height: 120px;
+    }
+    
+    .text-soft-skills {
+        padding: 0.5rem 0.2rem;
+    }
+
+    /* Reduz a altura do carrossel para deixar mais espaço para o resto */
+    .carousel-container {
+        height: 50vh; 
+    }
+    
+    /* Remoção dos ajustes antigos que agora estão obsoletos ou em conflito com os novos */
+    /* Remove as regras de .skill-bar, .angular, .circle, etc. se estiver unificando os arquivos */
+
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------- */

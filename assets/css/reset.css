@@ -1,0 +1,33 @@
+/* Reset básico CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+h1,h2,h3,h4,p {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+ul, ol {
+  list-style: none;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  z-index: 1;
+}
+
+ button {
+  background: none;
+  border: none;
+  cursor: pointer;
+ }

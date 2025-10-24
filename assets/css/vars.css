@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+:root {
+    /*FONT*/
+    --font-poppins: font-family: "Poppins", sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+
+    /*COLORS*/
+    --bg-color-aside: #000;
+    --color-line: #000380;
+    --color-profile-name: #fff;
+    --color-course: #AE8A9F;
+    --color-address: #AE8A9F;
+    --color-semester: #AE8A9F;
+    --color-contact-title: #AE8A9F;
+    --color-contact-icon: #000380;
+    --color-contact-icon-hover: #fff;
+    --color-contact-text: #AE8A9F;
+    --color-contact-text-hover: #fff;
+    --color-contact-link: #AE8A9F;
+    --color-contact-link-hover: #fff;
+    --color-formation-title: #AE8A9F;
+    --color-formation-text: #fff;
+    --color-conclusion-text: #fff;
+    --color-course-text: #fff;
+    --color-institution-text: #fff;
+
+    --primary: #883df2;
+    --secondary: #FFCA28;
+    --dark: #152026;
+    --track: #f1f1f1;
+}

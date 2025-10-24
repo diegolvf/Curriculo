@@ -1,0 +1,411 @@
+body {
+    font-family: var(--font-poppins);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+aside {
+    width: 30%;
+    background-color: var(--bg-color-aside);
+}
+
+.container-aside {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 1rem;
+    width: 95%;
+}
+
+.img-profile {
+    width: 9.37rem;
+    height: 9.37rem;
+    border-radius: 50%;
+    border: 8px solid #000380;
+    margin: 1rem auto;
+}
+
+.profile-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--color-profile-name);
+}
+
+.course-profile {
+    font-size: 0.9rem;
+    font-weight: 350;
+    color: var(--color-course);
+}
+
+.semester {
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: var(--color-semester);
+}
+
+.address {
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+    color: var(--color-address);
+}
+
+.line {
+    width: 100%;
+    border: 2px solid #000380;
+    border-radius: 3px;
+    background-color: var(--color-line);
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.contact-title {
+    font-size: 0.9rem;
+    font-weight: 550;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    color: var(--color-address);
+}
+
+.contact-icon .icon {
+    color: var(--color-contact-icon);
+    margin-bottom: 0.8rem;
+}
+
+.contact-icon .icon:hover {
+    color: var(--color-contact-icon-hover);
+}
+
+.contact-text {
+    font-size: 0.8rem;
+    font-weight: 350;
+    color: var(--color-contact-text);
+}
+
+.contact-text:hover {
+    color: var(--color-contact-text-hover);
+}
+
+.contact-link {
+    color: var(--color-contact-link);
+}
+
+.contact-link:hover {
+    color: var(--color-contact-link-hover);
+}
+
+.container-formation {
+    display: flex;
+    flex-direction: column;
+}
+
+.formation-title {
+    font-size: 0.9rem;
+    font-weight: 550;
+    text-align: left;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-formation-title);
+}
+
+.formation-list .list-itens {
+    margin-bottom: 0.8rem;
+}
+
+.conclusion,
+.course,
+.institution {
+    font-size: 0.8rem;
+    font-weight: 250;
+    color: var(--color-formation-text);
+}
+
+.course,
+.institution {
+    text-align: left;
+    text-transform: none;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    background-color: #eee;
+    padding: 1rem;
+}
+
+.container-about-me {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.objective-title,
+.experience-title,
+.soft-skills-title,
+.hard-skills-title,
+.certifications-title {
+    font-size: 1.1rem;
+    color: #AE8A9F;
+}
+
+.objectives {
+    margin: 1rem;
+}
+
+.text-objectives {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: justify;
+    text-transform: unset;
+    padding: 0.8rem;
+}
+
+.experience {
+    margin: 1rem;
+}
+
+.experience-list .experience-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 1rem;
+}
+
+.experience-item .position,
+.period {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.experience-item .position {
+    font-weight: 600;
+}
+
+.experience-item .period {
+    color: #AE8A9F;
+}
+
+.skills {
+    padding: 1rem;
+}
+
+.hard-skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: min(90%, 600px);
+    margin: 0 auto;
+}
+
+.hard-skill {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+}
+
+.hard-skill.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hard-skill-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.hard-skill-info {
+    flex: 1;
+}
+
+.hard-skill-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.progress-bar {
+    position: relative;
+    background: #ddd;
+    border-radius: 10px;
+    height: 12px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+    transition: width 0.4s ease-out;
+}
+
+/* Cores individuais */
+.progress-fill.html {
+    background: linear-gradient(90deg, #ff6a00, #ff9a00);
+}
+
+.progress-fill.css {
+    background: linear-gradient(90deg, #007bff, #00bfff);
+}
+
+.progress-fill.js {
+    background: linear-gradient(90deg, #f7df1e, #ffca28);
+}
+
+.progress-fill.angular {
+    background: linear-gradient(90deg, #dd0031, #ff5f5f);
+}
+
+.soft-skills {
+    margin-top: 4rem;
+}
+
+.soft-skills-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.soft-skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.soft-skill-text-container {
+    width: 30%;
+}
+
+.communication-title {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.text-soft-skills {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: justify;
+    text-transform: unset;
+    padding: 0.8rem;
+
+}
+
+.progress-circle {
+    position: relative;
+    width: min(40vw, 200px);
+    /* até 200px, mas ajusta conforme a tela */
+    aspect-ratio: 1 / 1;
+    /* garante círculo perfeito */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: min(8vw, 24px);
+}
+
+.number {
+    position: absolute;
+    font-weight: 700;
+    font-size: 0.8em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    color: var(--primary);
+}
+
+
+/* SVG se ajusta ao container */
+.circle {
+    width: 70%;
+    height: 100%;
+}
+
+/* Círculo de fundo */
+.circle .bg {
+    stroke: var(--track);
+    stroke-linecap: round;
+}
+
+/* Círculo de progresso */
+.circle .progress {
+    stroke: var(--secondary);
+    stroke-linecap: round;
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: rotate(-90deg);
+    transition: stroke-dashoffset 0.3s linear;
+}
+
+.carousel-container {
+    width: 80%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    margin: auto;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+    margin-top: 1.5rem;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-item embed {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Pontos indicadores (opcional) */
+.dots {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background: #777;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dot.active {
+    background: #fff;
+}
