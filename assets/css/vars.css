@@ -6,7 +6,6 @@
     --font-montserrat: 'Montserrat', sans-serif;
 
     /*COLORS*/
-    --bg-color-aside: #000;
     --color-line: #000380;
     --color-profile-name: #fff;
     --color-course: #AE8A9F;
@@ -24,7 +23,16 @@
     --color-conclusion-text: #fff;
     --color-course-text: #fff;
     --color-institution-text: #fff;
+    --color-objective-experience-hard-soft-certifications: #AE8A9F;
+    --color-experience-item-period: #AE8A9F;
+    --color-hard-skill-header: #222;
+    --bg-color-aside: #000;
+    --bg-color-container-about-me: #fff;
+    --bg-color-about-me: #eee;
+    --bg-color-progress-bar: #ddd;
+    --bg-color-dot: #777;
 
+    /* CIRCLES COLORS */
     --primary: #883df2;
     --secondary: #FFCA28;
     --dark: #152026;

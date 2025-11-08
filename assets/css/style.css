@@ -1,0 +1,266 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Layout principal */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #f5f7fa;
+}
+
+/* =========================
+   ASIDE (BARRA LATERAL)
+========================= */
+aside {
+    background: linear-gradient(180deg, #0d0d0d 0%, #1a1a1a 100%);
+    color: #eee;
+    flex: 1 1 300px;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+aside img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+}
+
+aside h1 {
+    font-size: 1.3rem;
+    color: #fff;
+    text-align: center;
+}
+
+aside h2 {
+    font-size: 0.9rem;
+    color: #bbb;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+aside section {
+    width: 100%;
+}
+
+aside section h3 {
+    font-size: 1rem;
+    color: #007bff;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.8rem;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside li {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+/* =========================
+   SEÇÃO PRINCIPAL
+========================= */
+.about-me {
+    flex: 3 1 700px;
+    padding: 2rem;
+}
+
+/* Seções internas em cards */
+.about-me section {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+}
+
+/* =========================
+   TÍTULOS E TEXTOS
+========================= */
+.about-me h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.about-me h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.about-me p {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 0.5rem;
+}
+
+/* =========================
+   OBJETIVOS / EXPERIÊNCIA
+========================= */
+.objectives p,
+.experience p {
+    margin-bottom: 0.6rem;
+}
+
+/* =========================
+   HARD SKILLS
+========================= */
+.hard-skill {
+    margin-bottom: 1rem;
+}
+
+.hard-skill span {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    color: #333;
+}
+
+.progress-bar {
+    background: #ededed;
+    border-radius: 20px;
+    height: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #007bff, #00b4d8);
+    width: 0;
+    transition: width 1.2s ease;
+}
+
+/* =========================
+   SOFT SKILLS
+========================= */
+.soft-skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.soft-skill {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.soft-skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.soft-skill h4 {
+    color: #007bff;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* =========================
+   CERTIFICAÇÕES
+========================= */
+.certifications ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    color: #444;
+}
+
+.certifications li {
+    margin-bottom: 0.4rem;
+}
+
+/* =========================
+   HOVER E ANIMAÇÕES
+========================= */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00b4d8;
+}
+
+section:hover {
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-me {
+        padding: 1rem;
+    }
+
+    .soft-skills-container {
+        gap: 1.5rem;
+    }
+
+    .soft-skill {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* =========================
+   ANIMAÇÃO DAS BARRAS DE SKILL
+========================= */
+@keyframes growSkill {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: var(--progress);
+    }
+}
+
+.progress-fill {
+    animation: growSkill 1.2s ease forwards;
+}
